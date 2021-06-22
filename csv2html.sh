@@ -14,6 +14,6 @@ sed 's/-genre<\/h2>/-genre (some might not available in your region) - <a href=\
 prettier -w $file.html
 
 # Pandoc - https://pandoc.org
-pandoc -V urlcolor=blue -V geometry:a4paper,margin=1cm --pdf-engine=pdflatex $file.html -o $file.pdf
+pandoc -V urlcolor=red -V geometry:a4paper,margin=1cm --pdf-engine=xelatex $file.html -o $file.pdf
 
 cp $file.html index.html
